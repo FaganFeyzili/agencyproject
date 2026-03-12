@@ -1,0 +1,382 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: orange;
+}
+a:hover {
+  color: black;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+header .menu {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu img {
+  height: 50px;
+}
+header .menu a {
+  margin-right: 10px;
+  color: white;
+}
+header .menu a:hover {
+  color: #ffc800;
+}
+header .menu a.active {
+  color: #ffc800;
+}
+
+#meet .container {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#meet .container .box {
+  align-content: center;
+  justify-items: center;
+  width: 100vw;
+  height: 90vh;
+  border: 2px solid black;
+  background-image: url("sekil/assets/img/header.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  letter-spacing: 5px;
+}
+#meet .container .box h2 {
+  margin: 0 0 10px 0;
+  font-style: italic;
+  font-size: 36px;
+}
+#meet .container .box h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+#meet .container .box .btn {
+  align-items: center;
+  width: 180px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 30px 0 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #ffc800;
+  font-weight: 500;
+}
+
+#services {
+  margin: 50px 0 50px 0;
+}
+#services .textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+#services .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+#services .textbox h2 {
+  font-size: 16px;
+  font-style: italic;
+  color: #787373;
+  margin: 0 0 30px 0;
+}
+#services .col-md-4 {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+#services .col-md-4 .icon {
+  background: #ffd43b;
+  border-radius: 50%;
+  font-size: 100px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#services .col-md-4 h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+#services .col-md-4 h3 {
+  line-height: 1.4;
+  font-size: 18px;
+  color: #787373;
+  margin: 10px 0 50px 0;
+}
+
+#portfolio {
+  background-color: rgb(248, 249, 250);
+}
+#portfolio .textbox {
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  jusitfy-content: center;
+}
+#portfolio .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+#portfolio .textbox h2 {
+  font-size: 16px;
+  font-style: italic;
+  color: #787373;
+  margin: 0 0 30px 0;
+}
+#portfolio .box {
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#portfolio .box .col-md-4 {
+  justify-items: center;
+}
+#portfolio .box .col-md-4 img {
+  width: 350px;
+  height: 250px;
+}
+#portfolio .textimg {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 350px;
+  padding: 5px 0;
+}
+#portfolio .textimg h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+#portfolio .textimg h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: rgba(136, 136, 136, 0.5333333333);
+}
+#portfolio .imgbox img {
+  height: 100%;
+}
+
+#about {
+  margin: 50px 0 0 0;
+}
+#about .box {
+  justify-items: center;
+  margin-bottom: 30px;
+}
+#about .box h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#about .box h3 {
+  font-size: 16px;
+  color: #787373;
+}
+#about .minibox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 100px;
+}
+#about .minibox .textbox {
+  width: 400px;
+  align-content: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+#about .minibox .textbox h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+#about .minibox .textbox h3 {
+  line-height: 1.5;
+  color: #787373;
+}
+#about .minibox .imgbox img {
+  border-radius: 100%;
+  border: 7px solid #e9ecef;
+}
+#about .yellow {
+  border: 7px solid #e9ecef;
+  background-color: #ffc800;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+#about .yellow h2 {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#team {
+  margin: 40px 0 0 0;
+  padding: 50px 0 0 0;
+  background-color: rgb(248, 249, 250);
+}
+#team .textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#team .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+#team .textbox h3 {
+  color: #787373;
+  font-style: italic;
+}
+#team .box {
+  margin: 30px 0 0 0;
+  display: flex;
+}
+#team .box {
+  justify-content: space-evenly;
+}
+#team .box .minibox {
+  justify-items: center;
+}
+#team .box .minibox h1 {
+  font-weight: 700;
+  font-size: 31px;
+}
+#team .box .minibox h3 {
+  color: #787373;
+}
+#team .box .minibox .imgbox {
+  display: flex;
+}
+#team .box .minibox .imgbox img {
+  width: 150px;
+  border-radius: 200px;
+  border: 10px solid #e9ecef;
+}
+#team .box .minibox .icon {
+  margin-top: 15px;
+}
+#team .box .minibox .icon i {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  padding: 10px 0px 22px 0;
+  font-size: 20px;
+  background: #000000;
+}
+#team .bottomm {
+  justify-items: center;
+  align-content: center;
+  width: 50%;
+  text-align: center;
+  margin: 40px 0 0 0;
+  color: #787373;
+}
+#team .logos {
+  background-color: #ffffff;
+  margin: 50px 0 0 0;
+  padding: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+#team .logos img {
+  width: 200px;
+}
+
+#contact {
+  background-color: #212529;
+  background-image: url("sekil/assets/img/map-image.png");
+  height: 70vh;
+}
+#contact .textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0 15px 0;
+  flex-direction: column;
+}
+#contact .textbox h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#contact .textbox h3 {
+  color: #787373;
+  font-style: italic;
+  margin: 0 0 50px 0;
+}
+#contact .box .minibox input {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#contact .messagebox input {
+  height: 250px;
+  width: 100%;
+}
+#contact .messagebox textarea {
+  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+  padding: 20px;
+}
+#contact .col-md-12 {
+  justify-content: center;
+}
+#contact .col-md-12 .btn {
+  opacity: 0.8;
+  margin: 30px 0 0 0;
+  width: 150px;
+  height: 50px;
+  background-color: #b28f0e;
+  align-content: center;
+}
+#contact .col-md-12 .btn h1 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+footer h2 {
+  color: #7b7878;
+}
+footer .textbox {
+  gap: 30px;
+}
+footer .icon i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 8px 0px 20px 0;
+  font-size: 20px;
+  background: #000000;
+}/*# sourceMappingURL=style.css.map */
