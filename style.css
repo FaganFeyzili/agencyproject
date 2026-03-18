@@ -73,7 +73,36 @@ header .menu a.active {
 }
 
 #services {
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
+}
+#services .container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1400px) {
+  #services .container {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1200px) {
+  #services .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  #services .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  #services .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  #services .container {
+    max-width: 540px;
+  }
 }
 #services .textbox {
   display: flex;
@@ -95,15 +124,15 @@ header .menu a.active {
 }
 #services .col-md-4 {
   align-items: center;
-  justify-items: center;
   text-align: center;
 }
 #services .col-md-4 .icon {
+  width: 150px;
+  height: 150px;
   background: #ffd43b;
-  border-radius: 50%;
+  border-radius: 100%;
   font-size: 100px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding-top: 25px;
 }
 #services .col-md-4 h2 {
   font-size: 24px;
@@ -119,12 +148,41 @@ header .menu a.active {
 #portfolio {
   background-color: rgb(248, 249, 250);
 }
+#portfolio .container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  #portfolio .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  #portfolio .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  #portfolio .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  #portfolio .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  #portfolio .container {
+    max-width: 1320px;
+  }
+}
 #portfolio .textbox {
   padding: 50px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  jusitfy-content: center;
+  justify-content: center;
 }
 #portfolio .textbox h1 {
   font-size: 40px;
@@ -143,17 +201,27 @@ header .menu a.active {
   flex-wrap: wrap;
   text-align: center;
 }
-#portfolio .box .col-md-4 {
-  justify-items: center;
+@media (max-width: 768px) {
+  #portfolio .box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-#portfolio .box .col-md-4 img {
-  width: 350px;
-  height: 250px;
+#portfolio .box .minibox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio .box .minibox img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 #portfolio .textimg {
   box-sizing: border-box;
   background-color: #ffffff;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   padding: 5px 0;
 }
 #portfolio .textimg h3 {
@@ -166,7 +234,8 @@ header .menu a.active {
   color: rgba(136, 136, 136, 0.5333333333);
 }
 #portfolio .imgbox img {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 #about {
@@ -233,6 +302,35 @@ header .menu a.active {
   padding: 50px 0 0 0;
   background-color: rgb(248, 249, 250);
 }
+#team .container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  #team .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  #team .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  #team .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  #team .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  #team .container {
+    max-width: 1320px;
+  }
+}
 #team .textbox {
   display: flex;
   flex-direction: column;
@@ -255,8 +353,17 @@ header .menu a.active {
 #team .box {
   justify-content: space-evenly;
 }
+@media (max-width: 768px) {
+  #team .box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #team .box .minibox {
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 #team .box .minibox h1 {
   font-weight: 700;
@@ -265,16 +372,15 @@ header .menu a.active {
 #team .box .minibox h3 {
   color: #787373;
 }
-#team .box .minibox .imgbox {
-  display: flex;
-}
 #team .box .minibox .imgbox img {
   width: 150px;
   border-radius: 200px;
   border: 10px solid #e9ecef;
 }
 #team .box .minibox .icon {
+  display: flex;
   margin-top: 15px;
+  justify-content: center;
 }
 #team .box .minibox .icon i {
   width: 40px;
