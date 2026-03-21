@@ -105,11 +105,7 @@ header .menu a.active {
   }
 }
 #services .textbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 20px 0;
+  text-align: center;
 }
 #services .textbox h1 {
   font-size: 40px;
@@ -122,26 +118,38 @@ header .menu a.active {
   color: #787373;
   margin: 0 0 30px 0;
 }
-#services .col-md-4 {
+#services .box {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
-#services .col-md-4 .icon {
-  width: 150px;
-  height: 150px;
-  background: #ffd43b;
+#services .box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
+  background: #ffc73b;
   border-radius: 100%;
-  font-size: 100px;
-  padding-top: 25px;
 }
-#services .col-md-4 h2 {
+#services .box .icon i {
+  font-size: 64px;
+}
+#services .box .textbox {
+  width: 100%;
+}
+#services .box .textbox h2 {
   font-size: 24px;
   font-weight: 700;
 }
-#services .col-md-4 h3 {
+#services .box .textbox p {
   line-height: 1.4;
   font-size: 18px;
   color: #787373;
+}
+#services .box .textbox {
   margin: 10px 0 50px 0;
 }
 
