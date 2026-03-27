@@ -188,14 +188,6 @@ header .menu .hamburger:hover {
   color: #787373;
   margin: 0 0 30px 0;
 }
-@media (min-width: 992px) {
-  #services .textbox h2 h1 {
-    font-size: 40px;
-  }
-  #services .textbox h2 h2 {
-    font-size: 16px;
-  }
-}
 #services .box {
   display: flex;
   flex-direction: column;
@@ -248,7 +240,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 992px) {
   #services .box .textbox h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
   #services .box .textbox p {
     font-size: 18px;
@@ -284,34 +276,37 @@ header .menu .hamburger:hover {
     font-size: 16px;
   }
 }
-#portfolio .box {
+#portfolio .row .box {
   margin-bottom: 80px;
-  display: flex;
   flex-wrap: wrap;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#portfolio .box .minibox {
+#portfolio .row .box .minibox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  padding-right: 30px;
+  width: 90%;
 }
-@media (min-width: 768px) {
-  #portfolio .box .minibox {
-    width: 50%;
+@media (max-width: 992px) {
+  #portfolio .row .box .minibox {
+    width: 100%;
   }
 }
-@media (min-width: 992px) {
-  #portfolio .box .minibox {
-    width: 33.33%;
+@media (max-width: 576px) {
+  #portfolio .row .box .minibox {
+    width: 70%;
   }
 }
-#portfolio .box .minibox img {
+#portfolio .row .box .minibox img {
   width: 100%;
   max-width: 350px;
   height: auto;
 }
-#portfolio .box .minibox img.hover {
+#portfolio .row .box .minibox img.hover {
   opacity: 0.8;
 }
 #portfolio .textimg {
