@@ -19,19 +19,55 @@ header .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 header .menu img {
   height: 50px;
 }
-header .menu a {
-  margin-right: 10px;
+header .menu nav a {
+  margin-left: 25px;
   color: white;
+  font-size: 14px;
 }
-header .menu a:hover {
+header .menu nav a:hover {
   color: #ffc800;
 }
-header .menu a.active {
+header .menu nav a.active {
   color: #ffc800;
+}
+header .menu .hamburger {
+  display: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+header .menu .hamburger:hover {
+  color: #ffc800;
+}
+@media (max-width: 992px) {
+  header .menu nav {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    display: none;
+    width: 100%;
+  }
+  header .menu nav a {
+    font-size: 16px;
+  }
+  header .menu .hamburger {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  header .menu img {
+    height: 40px;
+  }
+  header .menu nav {
+    top: 70px;
+  }
 }
 
 #meet .container {
@@ -39,37 +75,100 @@ header .menu a.active {
   padding-left: 0px;
 }
 #meet .container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   align-content: center;
   justify-items: center;
+  text-align: center;
   width: 100vw;
   height: 90vh;
   border: 2px solid black;
   background-image: url("sekil/assets/img/header.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center;
   color: white;
   letter-spacing: 5px;
+  padding: 0 15px;
 }
 #meet .container .box h2 {
+  text-align: center;
   margin: 0 0 10px 0;
   font-style: italic;
   font-size: 36px;
+  width: 100%;
 }
 #meet .container .box h1 {
+  text-align: center;
   font-size: 72px;
   font-weight: 700;
+  width: 100%;
 }
 #meet .container .box .btn {
+  cursor: pointer;
   align-items: center;
   width: 180px;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
-  margin: 30px 0 0 0;
+  margin: 40px 0 0 0;
   font-size: 18px;
   font-weight: 700;
   color: white;
   background-color: #ffc800;
+  border-radius: 4px;
   font-weight: 500;
+}
+@media (max-width: 992px) {
+  #meet .container .box h1 {
+    font-size: 56px;
+  }
+  #meet .container .box h2 {
+    font-size: 28px;
+  }
+  #meet .container .box .btn {
+    width: 160px;
+    padding: 12px 0;
+  }
+  #meet .container .box .btn h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #meet .container .box {
+    letter-spacing: 3px;
+  }
+  #meet .container .box h1 {
+    font-size: 40px;
+  }
+  #meet .container .box h2 {
+    font-size: 24px;
+  }
+  #meet .container .box .btn {
+    width: 150px;
+    padding: 10px 0;
+  }
+  #meet .container .box .btn h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #meet .container .box {
+    letter-spacing: 2px;
+  }
+  #meet .container .box h1 {
+    font-size: 32px;
+  }
+  #meet .container .box h2 {
+    font-size: 20px;
+  }
+  #meet .container .box .btn {
+    width: 140px;
+    padding: 8px 0;
+  }
+  #meet .container .box .btn h3 {
+    font-size: 14px;
+  }
 }
 
 #services {
@@ -400,6 +499,9 @@ header .menu a.active {
   #team .imgbox img {
     width: 140px;
   }
+  #team .icon {
+    margin-bottom: 10px;
+  }
   #team .icon i {
     width: 38px;
     height: 38px;
@@ -431,6 +533,9 @@ header .menu a.active {
   #team .imgbox img {
     width: 120px;
   }
+  #team .icon {
+    margin-bottom: 10px;
+  }
   #team .icon i {
     width: 36px;
     height: 36px;
@@ -450,20 +555,20 @@ header .menu a.active {
 #contact {
   background-color: #212529;
   background-image: url("sekil/assets/img/map-image.png");
-  height: 70vh;
+  padding: 80px 0;
 }
 #contact .textbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 60px 0 15px 0;
+  text-align: center;
+  margin-bottom: 50px;
   flex-direction: column;
 }
 #contact .textbox h1 {
   color: white;
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 #contact .textbox h3 {
   color: #787373;
@@ -471,9 +576,9 @@ header .menu a.active {
   margin: 0 0 50px 0;
 }
 #contact .box .minibox input {
-  height: 70px;
+  height: 60px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 #contact .messagebox input {
   height: 250px;
@@ -489,6 +594,7 @@ header .menu a.active {
   justify-content: center;
 }
 #contact .col-md-12 .btn {
+  cursor: pointer;
   opacity: 0.8;
   margin: 30px 0 0 0;
   width: 150px;
@@ -502,17 +608,86 @@ header .menu a.active {
   font-weight: 600;
   letter-spacing: 1.5px;
 }
+@media (max-width: 992px) {
+  #contact .col-md-6 {
+    width: 100%;
+  }
+  #contact .textbox h1 {
+    font-size: 36px;
+  }
+  #contact .textbox h3 {
+    font-size: 16px;
+  }
+  #contact .btn {
+    width: 160px;
+    height: 45px;
+  }
+  #contact .btn h1 {
+    font-size: 14px;
+  }
+  #contact .minibox input {
+    height: 60px;
+    font-size: 15px;
+  }
+  #contact .messagebox textarea {
+    height: 150px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #contact {
+    padding: 40px 15px;
+  }
+  #contact .textbox h1 {
+    font-size: 32px;
+  }
+  #contact .textbox h3 {
+    font-size: 14px;
+  }
+  #contact .col-md-6 {
+    width: 100%;
+  }
+  #contact .minibox input {
+    height: 55px;
+    font-size: 14px;
+  }
+  #contact .messagebox textarea {
+    height: 130px;
+    font-size: 14px;
+  }
+  #contact .btn {
+    width: 140px;
+    height: 45px;
+  }
+  #contact .btn h1 {
+    font-size: 13px;
+  }
+}
 
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: flex-wrap;
   padding: 30px;
 }
 footer h2 {
   color: #7b7878;
+  margin-top: 10px;
 }
 footer .textbox {
+  display: flex;
   gap: 30px;
+}
+footer .textbox h2 {
+  cursor: pointer;
+}
+footer .textbox h2.hover {
+  color: white;
+}
+footer .icon {
+  display: flex;
+  gap: 15px;
 }
 footer .icon i {
   width: 35px;
@@ -521,4 +696,17 @@ footer .icon i {
   padding: 8px 0px 20px 0;
   font-size: 20px;
   background: #000000;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .icon {
+    margin-top: 15px;
+  }
+  footer .textbox {
+    flex-direction: column;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

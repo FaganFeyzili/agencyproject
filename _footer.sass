@@ -1,13 +1,23 @@
 footer
     display: flex
     justify-content: space-between
+    align-items: center 
+    flex-wrap: flex-wrap
     padding: 30px
     h2
         color: #7b7878
+        margin-top: 10px
     .textbox
+        display: flex
         gap: 30px
+        h2 
+            cursor: pointer 
+            &.hover 
+                color: #ffff
         
     .icon
+        display: flex
+        gap: 15px
         i
             width: 35px
             height: 35px
@@ -15,3 +25,11 @@ footer
             padding: 8px 0px 20px 0
             font-size: 20px
             background: #000000 
+    @media(max-width: 768px)
+        flex-direction: column 
+        text-align: center 
+        .icon 
+            margin-top: 15px 
+        .textbox 
+            flex-direction: column 
+            gap: 10px 

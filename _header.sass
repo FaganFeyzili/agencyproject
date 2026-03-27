@@ -6,13 +6,42 @@ header
         display: flex 
         justify-content: space-between   
         align-items: center
+        position: relative 
         img 
             height: 50px
-        a
-            margin-right: 10px
-            color: white 
-            &:hover
-                color:  #ffc800
-            &.active
-                color:  #ffc800
-
+        nav
+            a
+                margin-left: 25px
+                color: #ffff
+                font-size: 14px  
+                &:hover
+                    color:  #ffc800
+                &.active
+                    color:  #ffc800
+        .hamburger 
+            display: none 
+            font-size: 22px 
+            color: #ffff 
+            cursor: pointer 
+            &:hover 
+                color: #ffc800  
+    @media (max-width: 992px)
+        .menu 
+            nav 
+                position: absolute 
+                width: 100%
+                flex-direction: column 
+                align-items: center 
+                padding: 20px 0 
+                display: none 
+                width: 100% 
+                a 
+                    font-size: 16px 
+            .hamburger 
+                display: block 
+    @media (max-width: 576px)
+        .menu 
+            img 
+                height: 40px 
+            nav 
+                top: 70px
