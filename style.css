@@ -339,62 +339,176 @@ header .menu .hamburger:hover {
 }
 
 #about {
-  margin: 50px 0 0 0;
+  padding: 100px 0;
+}
+#about .text-center {
+  margin-bottom: 55px;
+}
+#about .text-center h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: text;
+}
+#about .text-center h3 {
+  font-size: 20px;
+  color: #828080;
+  cursor: text;
 }
 #about .box {
-  justify-items: center;
-  margin-bottom: 30px;
-}
-#about .box h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-#about .box h3 {
-  font-size: 16px;
-  color: #787373;
-}
-#about .minibox {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 100px;
+  align-items: center;
+  margin: 0 0 100px 100px;
 }
-#about .minibox .textbox {
+#about .box .textbox {
   width: 400px;
-  align-content: center;
-  justify-content: center;
   margin: 0 20px;
+  text-align: end;
 }
-#about .minibox .textbox h1 {
-  font-size: 24px;
+#about .box .textbox h2, #about .box .textbox h4 {
+  font-size: 30px;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  line-height: 1.3;
+  cursor: text;
 }
-#about .minibox .textbox h3 {
-  line-height: 1.5;
-  color: #787373;
+#about .box .textbox p {
+  font-size: 19px;
+  color: #828080;
+  line-height: 1.4;
+  cursor: text;
 }
-#about .minibox .imgbox img {
-  border-radius: 100%;
-  border: 7px solid #e9ecef;
+#about .box .imgbox {
+  overflow: hidden;
+  border-radius: 200px;
+  width: 160px;
+  height: 160px;
+  border: 7px solid #ded8d8;
+  margin: 0 34px;
+}
+#about .box .imgbox img {
+  width: 160px;
+  height: 160px;
+}
+#about .right {
+  justify-content: end;
+  margin: 0 100px 100px 0;
+}
+#about .right .textbox {
+  text-align: start;
 }
 #about .yellow {
-  border: 7px solid #e9ecef;
-  background-color: #ffc800;
-  width: 170px;
-  height: 170px;
-  border-radius: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px;
 }
-#about .yellow h2 {
+#about .story {
+  width: 160px;
+  height: 160px;
+  border-radius: 200px;
+  background-color: #ffc800;
+  border: 7px solid #ded8d8;
+}
+#about .story .minibox {
   text-align: center;
+  padding: 0 40px;
+}
+#about .story .minibox h2 {
+  font-size: 20px;
   color: white;
-  font-size: 18px;
+  cursor: text;
   font-weight: 700;
+  line-height: 1.2;
+}
+@media screen and (max-width: 992px) {
+  #about .box {
+    margin: 0 0 100px 0;
+    align-items: flex-start;
+  }
+  #about .box .textbox {
+    width: 190px;
+  }
+  #about .box .imgbox {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about .text-center h1 {
+    font-size: 55px;
+  }
+  #about .text-center h3 {
+    font-size: 18px;
+  }
+  #about .box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 0 0 70px 0;
+  }
+  #about .box .textbox {
+    width: 400px;
+    text-align: start;
+  }
+  #about .box .imgbox {
+    width: 140px;
+    height: auto;
+    margin: 0;
+  }
+  #about .right {
+    margin: 0 0 70px 0;
+    flex-direction: row;
+  }
+  #about .right .textbox {
+    text-align: start;
+  }
+  #about .yellow {
+    justify-content: flex-start;
+  }
+  #about .yellow .story {
+    width: 140px;
+    height: 140px;
+  }
+  #about .yellow .story .minibox {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about .text-center h1 {
+    font-size: 50px;
+  }
+  #about .text-center h3 {
+    font-size: 18px;
+  }
+  #about .box .imgbox {
+    width: 100px;
+    height: auto;
+  }
+  #about .box .textbox h2, #about .box .textbox h4 {
+    font-size: 25px;
+  }
+  #about .box .textbox p {
+    font-size: 18px;
+  }
+  #about .yellow .story {
+    width: 90px;
+    height: 90px;
+  }
+  #about .yellow .story .minibox {
+    padding: 0 15px;
+  }
+  #about .yellow .story .minibox h2 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 310px) {
+  #about .yellow .story {
+    width: 50px;
+    height: 50px;
+  }
+  #about .yellow .story .minibox {
+    padding: 0 5px;
+  }
+  #about .yellow .story .minibox h2 {
+    font-size: 9px;
+  }
 }
 
 #team {
