@@ -277,6 +277,7 @@ header .menu .hamburger:hover {
   }
 }
 #portfolio .row .box {
+  margin-left: 50px;
   margin-bottom: 80px;
   flex-wrap: wrap;
   text-align: center;
@@ -284,22 +285,23 @@ header .menu .hamburger:hover {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 992px) {
+  #portfolio .row .box {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  #portfolio .row .box {
+    width: 90%;
+  }
+}
 #portfolio .row .box .minibox {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-right: 30px;
   width: 90%;
-}
-@media (max-width: 992px) {
-  #portfolio .row .box .minibox {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  #portfolio .row .box .minibox {
-    width: 70%;
-  }
 }
 #portfolio .row .box .minibox img {
   width: 100%;
@@ -478,8 +480,12 @@ header .menu .hamburger:hover {
     font-size: 18px;
   }
   #about .box .imgbox {
-    width: 100px;
+    width: 150px;
     height: auto;
+  }
+  #about .box .imgbox img {
+    width: 100%;
+    height: 100%;
   }
   #about .box .textbox h2, #about .box .textbox h4 {
     font-size: 25px;
@@ -511,10 +517,10 @@ header .menu .hamburger:hover {
   }
 }
 
-#team {
-  margin: 40px 0 0 0;
-  padding: 50px 0 0 0;
+#team .container {
+  max-width: 100%;
   background-color: rgb(248, 249, 250);
+  padding: 50px 0;
 }
 #team .textbox {
   display: flex;
@@ -654,9 +660,53 @@ header .menu .hamburger:hover {
     width: auto;
   }
   #team .logos {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+    align-items: center;
   }
   #team .logos img {
+    width: 150px;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  #team .box {
+    flex-direction: column;
+  }
+  #team .box .minibox {
+    width: 100%;
+  }
+  #team .textbox h1 {
+    font-size: 32px;
+  }
+  #team .minibox h1 {
+    font-size: 24px;
+  }
+  #team .imgbox img {
+    width: 120px;
+  }
+  #team .icon {
+    margin-bottom: 10px;
+  }
+  #team .icon i {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  #team .bottomm {
+    width: auto;
+  }
+  #team .logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    align-items: center;
+  }
+  #team .logos img {
+    margin: 10px 0;
     width: 140px;
   }
 }
@@ -743,7 +793,7 @@ header .menu .hamburger:hover {
     font-size: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #contact {
     padding: 40px 15px;
   }
@@ -815,7 +865,8 @@ footer .icon i {
     margin-top: 15px;
   }
   footer .textbox {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

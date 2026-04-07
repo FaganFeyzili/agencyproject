@@ -1,7 +1,8 @@
 #team
-    margin: 40px 0 0 0
-    padding: 50px 0 0 0
-    background-color: rgba(248, 249, 250)
+    .container   
+        max-width: 100%  
+        background-color: rgba(248, 249, 250)
+        padding: 50px 0
     .textbox
         display: flex
         flex-direction: column
@@ -92,6 +93,7 @@
             padding: 30px 
             img 
                 width: 160px
+
     @media(max-width: 768px)
         .box
             flex-direction: column
@@ -99,19 +101,53 @@
                 width: 100%
         .textbox h1
             font-size: 32px
-        .minibox h1
+        .minibox h1 
             font-size: 24px 
         .imgbox img
             width: 120px
         .icon
             margin-bottom: 10px 
             i
-                width: 36px 
+                width: 36px  
                 height: 36px 
                 font-size: 18px
         .bottomm 
             width: auto
         .logos 
+            margin-bottom: 150px 
+            display: flex 
+            flex-direction: column 
             padding: 20px 
+            align-items: center 
             img 
-                width: 140px
+                width: 150px 
+                height: auto
+
+    @media(max-width: 576px)
+        .box
+            flex-direction: column
+            .minibox 
+                width: 100%
+        .textbox h1
+            font-size: 32px
+        .minibox h1 
+            font-size: 24px 
+        .imgbox img
+            width: 120px
+        .icon
+            margin-bottom: 10px 
+            i
+                width: 36px  
+                height: 36px 
+                font-size: 18px
+        .bottomm 
+            width: auto
+        .logos 
+            display: flex 
+            flex-direction: column 
+            flex-wrap: nowrap
+            padding: 20px 
+            align-items: center 
+            img 
+                margin: 10px 0 
+                width: 140px 
